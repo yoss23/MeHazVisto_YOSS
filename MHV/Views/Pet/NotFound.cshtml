@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "NotFound";
+}
+@section featured {
+
+
+<section class="featured">
+    <div class="content-wrapper">
+    <hgroup class="title">
+<h1> la informacion que buscaba no pudo ser encontrada </h1>
+        <br />
+        <br />
+      <center><img width="200px" height="100px" src="~/Content/themes/base/images/lo%20sentimos.png" /></center>
+        <p>
+       <h2>Detalles</h2>
+        </hgroup>
+<ul>
+   <!-- <li><b>CODIGO DE ERROR:</b>@ViewData["ErrorCode"]</li>
+    <li><b>DESCRIPCION:</b>@ViewData["Descripcion"]</li>-->
+
+    <li><b>CODIGO DE ERROR:</b>@ViewBag.ErrorCode</li>
+    <li><b>DESCRIPCION:</b>@ViewBag.Descripcion</li>
+</ul>
+      
+        <input type="submit" value="Regresar" onclick="window.location.href='http://localhost:54232/'"/>
+        </div>
+    </section>
+    }
